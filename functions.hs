@@ -70,7 +70,7 @@ main = do
     loop
 
 -- Actual Functions
-
+-- c 3 4
 pythagorean :: (Ord a, Floating a) => Char -> a -> a -> [a]
 pythagorean s x y
     | s == 'c' = [x,y,sqrt(x^2 + y^2)]
@@ -80,12 +80,13 @@ pythagorean s x y
     | otherwise = error "bad character value"
 
 
+-- 1 -7 12
 quadratic :: (Floating a) => a -> a -> a -> [a]
 quadratic a b c = [e plus, e minus]
     where e plusOrMinus = (-b + plusOrMinus) / (2 * a)
           plus = sqrt $ (b ^ 2) - (4 * a * c)
           minus = -plus
-
+--5
 square :: (Num a) => a -> a
 square x = x^2
 
