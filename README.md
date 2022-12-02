@@ -2,7 +2,7 @@
 
 My friend has been having some troubles with his calculus homework so I tried to make a program that would help him confirm the answers so that he was able to learn better. Haskell is an interesting language.
 
-[Haskell Demo](http://youtube.link.goes.here)
+[Haskell Demo](https://youtu.be/iV52e9HCSCc)
 
 # Development Environment
 

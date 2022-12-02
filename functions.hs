@@ -4,6 +4,7 @@ process "help" _ = unlines [
     "  pythagorean <missing value a|b|c> <value 1> <value 2>",
     "  quadratic <a> <b> <c>",
     "  square <x>",
+    "  commonDerivatives <x>",
     "  commonDerivativesHelp (to see list of common derivative functions."
     ]
 
@@ -79,13 +80,13 @@ pythagorean s x y
     | s == 'b' = [x,sqrt(y^2 - x^2),y] 
     | otherwise = error "bad character value"
 
-
 -- 1 -7 12
 quadratic :: (Floating a) => a -> a -> a -> [a]
 quadratic a b c = [e plus, e minus]
     where e plusOrMinus = (-b + plusOrMinus) / (2 * a)
           plus = sqrt $ (b ^ 2) - (4 * a * c)
           minus = -plus
+
 --5
 square :: (Num a) => a -> a
 square x = x^2
